@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 // Exercise 1 - Minimum
 
@@ -7,13 +7,13 @@
  * @param {number[]} values array of numbers
  */
 
-const min = values => {
-    let min = values[0];
-    for (const value of values) {
-        if (min > value) min = value;
-    }
-    return min;
-};
+export const min = values => {
+  let min = values[0]
+  for (const value of values) {
+    if (min > value) min = value
+  }
+  return min
+}
 
 // Exercise 2 - Bean Counting
 
@@ -22,10 +22,10 @@ const min = values => {
  * @param {string} sentence
  */
 
-const countBs = sentence => {
-    let bCount = 0;
-    for (const letter of sentence) {
-        if (letter === "B") bCount++;
-    }
-    return bCount;
-};
+export const countBs = sentence => {
+  let bCount = 0
+  for (const letter of sentence) {
+    if (letter === 'B') bCount++
+  }
+  return bCount
+}

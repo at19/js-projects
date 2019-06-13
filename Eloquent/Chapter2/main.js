@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 // Exercise 1 - Looping a triangle
 
@@ -7,15 +7,15 @@
  * @param {number} n height of the triangle
  */
 
-const loopTriangle = n => {
-    for (let height = 0; height < n; height++) {
-        let string = "";
-        for (let length = 0; length < height; length++) {
-            string += "#";
-        }
-        console.log(string);
+export const loopTriangle = n => {
+  for (let height = 0; height < n; height++) {
+    let string = ''
+    for (let length = 0; length < height; length++) {
+      string += '#'
     }
-};
+    console.log(string)
+  }
+}
 
 // Exercise 2 - FizzBuzz
 
@@ -25,14 +25,14 @@ const loopTriangle = n => {
  * and every number divisible by 5 with "Buzz"
  */
 
-const fizzBuzz = () => {
-    for (let index = 1; index <= 100; index++) {
-        if (index % 3 === 0 && index % 5 === 0) console.log("FizzBuzz");
-        else if (index % 3 === 0) console.log("Fizz");
-        else if (index % 5 === 0) console.log("Buzz");
-        else console.log(index);
-    }
-};
+export const fizzBuzz = () => {
+  for (let index = 1; index <= 100; index++) {
+    if (index % 3 === 0 && index % 5 === 0) console.log('FizzBuzz')
+    else if (index % 3 === 0) console.log('Fizz')
+    else if (index % 5 === 0) console.log('Buzz')
+    else console.log(index)
+  }
+}
 
 // Exercise 3 - Chessboard
 
@@ -42,15 +42,15 @@ const fizzBuzz = () => {
  * @param {number} y width of the chessboard
  */
 
-const chessboard = (x, y) => {
-    for (let row = 1; row <= x; row++) {
-        let string = "";
-        let column = 1;
-        if (row % 2 === 0) column++;
-        for (column; column <= y; column++) {
-            if (column % 2 === 0) string += "#";
-            else string += " ";
-        }
-        console.log(string);
+export const chessboard = (x, y) => {
+  for (let row = 1; row <= x; row++) {
+    let string = ''
+    let column = 1
+    if (row % 2 === 0) column++
+    for (column; column <= y; column++) {
+      if (column % 2 === 0) string += '#'
+      else string += ' '
     }
-};
+    console.log(string)
+  }
+}

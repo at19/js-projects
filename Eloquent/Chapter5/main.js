@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 // Exercise 1 - Flattening
 
@@ -7,6 +7,6 @@
  * @param {T[]} array array of arrays
  */
 
-const flatten = array => {
-    return array.reduce((acc, value) => acc.concat(value));
-};
+export const flatten = array => {
+  return array.reduce((acc, value) => acc.concat(value))
+}
